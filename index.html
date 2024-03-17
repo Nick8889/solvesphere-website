@@ -7,34 +7,40 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="SolveSphere Logo" id="logo">
-        <h1>Welcome to SolveSphere!</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Tutorials</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <img src="logo.png" alt="SolveSphere Logo" class="logo">
+            <nav class="site-nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Tutorials</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </div>
     </header>
     
     <main>
-        <section id="intro">
-            <p>Instant help with all types of math</p>
-            <ul>
-                <li>Send task - get the answer in a few minutes</li>
-                <li>Online help 24/7</li>
-            </ul>
-            <button id="create-task">Create new task</button>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Welcome to SolveSphere!</h1>
+                <p class="hero-tagline">Instant help with all types of math</p>
+                <ul class="features-list">
+                    <li>Send task - get the answer in a few minutes</li>
+                    <li>Online help 24/7</li>
+                </ul>
+                <button class="cta-button">Create new task</button>
+            </div>
         </section>
         
-        <section id="services">
-            <!-- Your services here -->
+        <section class="services container">
+            <!-- Add service sections here -->
         </section>
     </main>
     
-    <footer>
-        <!-- Your footer here -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Your footer here -->
+        </div>
     </footer>
     
     <script src="script.js"></script>
