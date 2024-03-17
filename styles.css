@@ -1,40 +1,76 @@
 /* ... other styles ... */
 
-/* Hero section with a blue gradient */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-image: linear-gradient(to right, #56CCF2, #2F80ED); /* Blue gradient */
-    color: white;
+/* Header styles for navigation and logo */
+.site-header {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* ... other styles ... */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/* Animated blue button for 'Get Answers Now' */
+.logo {
+    height: 50px; /* Adjusted logo size */
+}
+
+/* Navigation and CTA button styles */
+.site-nav .nav-link {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px; /* Increased margin for alignment */
+}
+
+/* Adjusted CTA button style */
 .button.get-answers {
-    background-image: linear-gradient(45deg, #4D9FEC, #0062E6);
+    background-color: #007bff; /* Adjusted blue to match gradient */
     color: white;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     text-decoration: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    transform: translateY(0);
+    transition: background-color 0.3s ease;
 }
 
 .button.get-answers:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transform: translateY(-2px);
+    background-color: #0056b3;
 }
 
-/* ... other styles ... */
+/* Hero section with blue gradient and text alignment */
+.hero {
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding for better fit */
+    background-image: linear-gradient(to right, #56CCF2, #2F80ED);
+    color: white;
+}
 
-/* Footer with a darker blue background */
+.hero-title {
+    font-size: 2.5em; /* Adjusted font size for better fit */
+}
+
+.hero-subtitle {
+    font-size: 1.5em; /* Adjusted font size for subtitle */
+    margin-bottom: 1em;
+}
+
+/* Footer styles with consistent blue color */
 .site-footer {
-    background: #2F80ED; /* Darker blue */
+    background: #2F80ED;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 /* ... other styles ... */
+
+/* Responsive adjustments for better alignment */
+@media (min-width: 768px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    .hero {
+        padding: 80px 20px; /* Adjusted padding for larger displays */
+    }
+}
