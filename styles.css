@@ -1,49 +1,18 @@
-/* Base reset and typography styles */
-*, *::before, *::after {
-    box-sizing: border-box;
+/* ... other styles ... */
+
+/* Hero section with a blue gradient */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: linear-gradient(to right, #56CCF2, #2F80ED); /* Blue gradient */
+    color: white;
 }
 
-body, html {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-/* Styling for header, logo, and navigation */
-.site-header {
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.logo {
-    height: 100px;
-    animation: bounce 2s infinite alternate; /* Logo bounce animation */
-}
-
-@keyframes bounce {
-    from { transform: translateY(0); }
-    to { transform: translateY(-5px); }
-}
-
-.site-nav .nav-link {
-    text-decoration: none;
-    color: #333;
-    margin: 0 10px;
-}
+/* ... other styles ... */
 
 /* Animated blue button for 'Get Answers Now' */
 .button.get-answers {
-    background-image: linear-gradient(45deg, #6dd5ed, #2193b0);
+    background-image: linear-gradient(45deg, #4D9FEC, #0062E6);
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
@@ -58,43 +27,14 @@ body, html {
     transform: translateY(-2px);
 }
 
-/* Hero section with vibrant gradient and larger text */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-image: linear-gradient(to right, #ff9966, #ff5e62);
-    color: white;
-}
+/* ... other styles ... */
 
-.hero-title {
-    font-size: 3.5em;
-    margin-bottom: 0.5em;
-}
-
-.hero-subtitle {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-
-/* Footer with a subtle background */
+/* Footer with a darker blue background */
 .site-footer {
-    background: #333;
+    background: #2F80ED; /* Darker blue */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-.site-footer p {
-    margin: 0;
-}
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-    .header-container {
-        justify-content: space-between;
-    }
-
-    .hero {
-        padding: 150px 20px; /* More vertical padding for larger displays */
-    }
-}
+/* ... other styles ... */
