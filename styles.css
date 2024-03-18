@@ -74,3 +74,46 @@
         padding: 80px 20px; /* Adjusted padding for larger displays */
     }
 }
+.features {
+    background-color: #f0f2f5; /* Light background to distinguish the section */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features-title {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #2F80ED; /* Matching the site's color theme */
+}
+
+.feature-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.feature-item {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Soft rounded corners for a modern look */
+}
+
+.feature-item h3 {
+    color: #007bff; /* Highlight feature titles */
+}
+
+.feature-item p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-item {
+        width: 100%;
+        margin-bottom: 20px; /* More space between items on smaller screens */
+    }
+}
