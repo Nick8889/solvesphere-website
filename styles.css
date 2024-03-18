@@ -1,1 +1,50 @@
-*{margin:0;padding:0;box-sizing:border-box}body,html{font-family:'Arial',sans-serif;line-height:1.6;color:#333;overflow-x:hidden}.site-header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.1);padding:10px 0}.header-container{display:flex;align-items:center;justify-content:space-between;padding:0 20px}.logo{height:40px;margin-right:20px}.site-nav{display:flex;align-items:center}.nav-link,.get-answers{margin:0 10px;padding:8px 15px;text-decoration:none;color:#333}.get-answers{background-color:#007bff;color:#fff;border-radius:20px;transition:background-color .3s}.get-answers:hover{background-color:#0056b3}.hero{text-align:center;padding:60px 20px;background-image:linear-gradient(to right,#56CCF2,#2F80ED);color:#fff}.hero-title{font-size:2.5rem;margin-bottom:20px}.hero-subtitle{font-size:1.25rem;margin-bottom:30px}.features{padding:40px 20px;background-color:#f0f2f5;text-align:center}.features-title{color:#2F80ED;margin-bottom:30px;font-size:2rem}.feature-items{display:flex;justify-content:space-around;flex-wrap:wrap}.feature-item{width:calc(33.333% - 20px);margin:10px;padding:20px;background:#fff;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1);text-align:left}@media(max-width:768px){.feature-item{width:calc(50% - 20px)}}@media(max-width:480px){.feature-item{width:100%}.header-container{flex-direction:column;align-items:flex-start}.site-nav,.get-answers{margin-top:10px}}
+/* Header styles */
+.site-header {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Header navigation alignment and button styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.nav-link {
+    padding: 8px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Button alignment and styling */
+.get-answers {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto; /* Pushes the button to the far right */
+}
+
+.get-answers:hover {
+    background-color: #0056b3;
+}
+
+/* ... Rest of your CSS ... */
+
+@media (max-width: 768px) {
+    /* ... */
+    .site-nav, .get-answers {
+        margin-top: 10px;
+    }
+}
