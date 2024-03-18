@@ -1,49 +1,122 @@
-/* Header styles */
+/* Base reset and typography styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Styling for header, logo, and navigation */
 .site-header {
     background: #fff;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Header navigation alignment and button styling */
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    justify-content: space-between;
+    padding: 0 20px; /* Adjusted padding for better alignment */
 }
 
+.logo {
+    height: 40px; /* Adjusted logo size for better fit */
+    margin-right: 20px; /* Ensure some space between the logo and navigation */
+}
+
+/* Adjustments to navigation and the Get Answers Now button */
 .site-nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-link {
-    padding: 8px 15px;
-    margin: 0 10px;
+.nav-link, .get-answers {
     text-decoration: none;
     color: #333;
+    padding: 8px 15px;
+    margin: 0 10px; /* Ensure even spacing around links */
 }
 
-/* Button alignment and styling */
 .get-answers {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for the theme */
+    color: white;
     border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: auto; /* Pushes the button to the far right */
+    transition: background-color 0.3s ease;
 }
 
 .get-answers:hover {
     background-color: #0056b3;
 }
 
-/* ... Rest of your CSS ... */
+/* Hero section adjustments for alignment and aesthetic */
+.hero {
+    text-align: center;
+    padding: 60px 20px; /* Adjusted for aesthetic spacing */
+    background-image: linear-gradient(to right, #56CCF2, #2F80ED); /* Blue gradient */
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.5rem; /* Balanced size for titles */
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem; /* Clear and readable subtitle size */
+    margin-bottom: 30px;
+}
+
+/* Features section for informative and visual appeal */
+.features {
+    padding: 40px 20px;
+    background-color: #f0f2f5; /* Light background for contrast */
+    text-align: center; /* Centered text for a clean look */
+}
+
+.features-title {
+    color: #2F80ED; /* Blue theme color for titles */
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.feature-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: calc(33.333% - 20px); /* Three items per row with spacing */
+    margin: 10px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left; /* Left-aligned text for readability */
+}
 
 @media (max-width: 768px) {
-    /* ... */
+    .feature-item {
+        width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        width: 100%; /* Full width on very small screens for better accessibility */
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .site-nav, .get-answers {
         margin-top: 10px;
     }
