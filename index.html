@@ -8,18 +8,54 @@
 </head>
 <body>
     <header class="site-header">
-        <img src="logo.png" alt="Logo" class="logo">
-        <nav><a href="#">Home</a><a href="#">About</a><a href="#" class="cta">Get Answers Now</a></nav>
+        <div class="container header-container">
+            <img src="logo.png" alt="SolveSphere Logo" class="logo">
+            <nav class="site-nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <!-- Removed Tutorials and Contact, added Get Answers Now button -->
+                <a href="#" class="button get-answers">Get Answers Now</a>
+            </nav>
+        </div>
     </header>
+    
     <main>
-        <section class="hero"><h1>Welcome to SolveSphere!</h1><p>Your trusted partner in math challenges.</p></section>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Welcome to SolveSphere!</h1>
+                <!-- Enhanced hero subtitle and description -->
+                <p class="hero-subtitle">Instant help with all types of math. Send a task, get the answer in minutes. Available 24/7.</p>
+            </div>
+        </section>
+        
+        <!-- New Features section -->
         <section class="features">
-            <h2>Why Us?</h2>
-            <div class="feature"><h3>Fast Solutions</h3><p>Quick, reliable answers.</p></div>
-            <div class="feature"><h3>24/7 Help</h3><p>Assistance anytime.</p></div>
-            <div class="feature"><h3>Accuracy</h3><p>Double-checked solutions.</p></div>
+            <div class="container">
+                <h2 class="features-title">Why SolveSphere is Your Best Choice</h2>
+                <div class="feature-items">
+                    <div class="feature-item">
+                        <h3>Fast Solutions</h3>
+                        <p>Get answers quickly with our efficient solving process and expert team.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>24/7 Availability</h3>
+                        <p>Our experts are ready to assist you with any math problem at any time.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Accuracy Guaranteed</h3>
+                        <p>Our solutions are double-checked for accuracy, ensuring you receive reliable help every time.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer><p>&copy; 2024 SolveSphere. All rights reserved.</p></footer>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 SolveSphere. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
