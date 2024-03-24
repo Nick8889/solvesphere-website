@@ -1,4 +1,5 @@
 document.getElementById('get-answers').addEventListener('click', function() {
+    console.log("Button was clicked"); // This should show in the console when you click the button
     document.getElementById('main-content').innerHTML = `
         <header class="site-header">
             <div class="container header-container">
