@@ -4,7 +4,7 @@ document.getElementById('get-answers').addEventListener('click', function() {
         <header class="site-header">
             <div class="container header-container">
                 <nav class="site-nav">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </nav>
             </div>
         </header>
