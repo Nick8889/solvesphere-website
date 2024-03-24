@@ -103,6 +103,42 @@ body, html {
     text-align: left; /* Left-aligned text for readability */
 }
 
+/* 03/24: New code */
+/* Packages section styles */
+.packages {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.package {
+    flex-basis: 30%; /* Each package will take up roughly a third of the container width */
+    padding: 20px;
+    margin: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.package h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.package ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Aligns text to the left within the package */
+}
+
+.package li {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* 03/24: End of new code */
+
 @media (max-width: 768px) {
     .feature-item {
         width: calc(50% - 20px); /* Two items per row on smaller screens */
