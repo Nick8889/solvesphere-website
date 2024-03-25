@@ -33,7 +33,7 @@ document.getElementById('get-answers').addEventListener('click', function() {
             <ul>
                 <li>Access to ask up to 20 or more math questions per user.</li>
                 <li>Support: Response ASAP.</li>
-                <li>Price: $12 total for 20 questions OR more in queue for user.</li>
+                <li>Price: $10 total for 10 questions or $11 total for 11 question or 20 questions OR more in queue for user.</li>
             </ul>
         </div>
         </section>
