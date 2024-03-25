@@ -4,9 +4,6 @@ document.getElementById('get-answers').addEventListener('click', function() {
     document.getElementById('main-content').innerHTML = `
         <header class="site-header">
             <div class="container header-container">
-                <nav class="site-nav">
-                    <a href="#home" class="nav-link">Home</a>
-                </nav>
             </div>
         </header>
         <section id="packages" class="packages">
