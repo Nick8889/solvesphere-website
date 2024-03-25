@@ -1,3 +1,4 @@
+let initialContent = document.getElementById('main-content').innerHTML;
 document.getElementById('get-answers').addEventListener('click', function() {
     console.log("Button was clicked"); // This should show in the console when you click the button
     document.getElementById('main-content').innerHTML = `
@@ -40,4 +41,9 @@ document.getElementById('get-answers').addEventListener('click', function() {
         </div>
         </section>
     `;
+});
+
+document.getElementById('home-link').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default action of the link
+    document.getElementById('main-content').innerHTML = initialContent;
 });
